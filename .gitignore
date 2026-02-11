@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.env
+.venv
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Temporary outputs
+tmp/
+cache/
+
+# Large raw data (DO NOT TRACK)
+data/voxceleb1/test/wav/
+data/voxceleb2/
+# Model checkpoints (not needed)
+checkpoints/
+models/
+
+# Optional: plots
+figures/
