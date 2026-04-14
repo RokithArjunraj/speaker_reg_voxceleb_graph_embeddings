@@ -5,6 +5,7 @@ scikit-learn>=1.2
 
 # Deep learning
 torch>=2.0
+torchaudio>=2.0
 
 # Graph Neural Networks
 torch-geometric>=2.4
@@ -12,9 +13,24 @@ torch-scatter>=2.1
 torch-sparse>=0.6
 torch-cluster>=1.6
 
-# Utilities
-tqdm>=4.65
+# Speaker embedding extraction
+speechbrain>=1.0
+
+# Visualization (qualitative analysis)
 matplotlib>=3.7
 seaborn>=0.12
 
-Make sure the xvectors , ecapa_xvectors , protocol output folders are present.
+# Utilities
+tqdm>=4.65
+pandas>=1.5
+
+# Notes:
+# - speechbrain required for 01_extract_* notebooks only
+# - Pre-extracted embeddings are provided for VoxCeleb1 (see outputs/)
+# - Make sure the following output folders exist:
+#     outputs/xvectors/
+#     outputs/ecapa_xvectors/
+#     outputs/librispeech_tdnn/
+#     outputs/librispeech_ecapa/
+#     outputs/protocol/
+# - Use the extracted outputs directly , no need to run the Extraction 
